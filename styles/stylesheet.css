@@ -10,16 +10,19 @@
     font-size: 4rem;
     font-weight: 700;
 }
-.text-secondary{
-    color:  #727272;
-font-size: 1rem;
-font-weight: 400;
+
+.text-secondary {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
 }
-.section-heading-text{
+
+.section-heading-text {
     color: #131313;
-font-size: 1.8rem;
-font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
+
 .btn-primary {
     border-radius: 8px;
     background: #FF900E;
@@ -86,41 +89,77 @@ nav li a {
 }
 
 /* Main styles */
-main{
+main {
     max-width: 1440px;
     margin: 70px auto;
 }
+
 /* Teams styles */
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-container-img{
+
+.teams-container-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 50px;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
-.teams-heading{
+
+.teams-heading {
     font-size: 1.8rem;
     margin-top: 80px;
 
 }
-.text-quick{
+
+.text-quick {
     color: #727272;
     font-weight: 500;
 }
-.text-of{
+
+.text-of {
     color: #131313;
     font-weight: 700;
 }
-.text-features{
+
+.text-features {
     color: #FF900E;
     font-weight: 700;
+
+}
+
+/* Facts */
+.facts-card-container {
+    display: flex;
+    gap: 124px;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+
+.card-stats {
+    color: #424242;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-title{
+    font-size: 1.2rem;
+    color: #727272;
+    font-weight: 600;
+    margin-top: 5px;
 
 }
 
@@ -134,14 +173,17 @@ main{
     nav {
         flex-direction: column;
     }
+
     .teams-container {
         flex-direction: column-reverse;
     }
-    .teams-content{
+
+    .teams-content {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .teams-container-img{
+
+    .teams-container-img {
         grid-template-columns: 1fr;
     }
 
@@ -156,6 +198,7 @@ main{
     nav {
         flex-direction: column;
     }
+
     .teams-container {
         flex-direction: column-reverse;
     }
