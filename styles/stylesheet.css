@@ -22,11 +22,13 @@
     font-size: 1.8rem;
     font-weight: 700;
 }
-.sub-heading-text{
+
+.sub-heading-text {
     color: #131313;
-font-size: 1.25rem;
-font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
+
 .btn-primary {
     border-radius: 8px;
     background: #FF900E;
@@ -139,34 +141,48 @@ main {
 }
 
 /* Feature */
-.features-section{
+.features-section {
     display: flex;
     margin-top: 130px;
     gap: 100px;
 }
-.features-content .section-heading-text{
+
+.features-content .section-heading-text {
     border-left: 5px solid #FF900E;
     padding: 20px;
 }
-.features-card{
+
+.features-card {
     border-radius: 8px;
-background: #FFF;
-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-padding: 30px;
-margin-bottom: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 30px;
 }
-.teen-years-badge{
+
+.teen-years-badge {
+    text-align: center;
     color: #FFF;
     width: 342px;
     border-radius: 8px;
-background: #FF900E;
-padding: 45px 42px;
+    background: #FF900E;
+    padding: 45px 42px;
+    position: relative;
+    bottom: 100px;
+  
 }
-.teen-years-badge h2{
+
+.teen-years-badge h2 {
     color: #FFF;
+    margin: 0;
 
 
 }
+.features-img img{
+    height: 90%;
+    margin-left: 50px;
+}
+
 /* Facts */
 .facts-card-container {
     display: flex;
@@ -188,25 +204,37 @@ padding: 45px 42px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.card-title{
+
+.card-title {
     font-size: 1.2rem;
     color: #727272;
     font-weight: 600;
     margin-top: 5px;
 
 }
+
 /* Sponsors section */
-.sponsors-section{
+.sponsors-section {
     text-align: center;
 }
-.sponsors-img-container{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     align-items: center;
 }
-.sponsors-img-container img{
+
+.sponsors-img-container img {
     width: 165px;
+}
+/* Footer */
+footer{
+    text-align: center;
+    padding: 40px 410px;
+    border-radius: 8px;
+background: #FFF4E7;
+
 }
 /* Responsive media queries */
 /* Small devices */
@@ -214,6 +242,7 @@ padding: 45px 42px;
     header {
         padding: 20px;
     }
+    .features-section,
     .sponsors-img-container,
     .facts-card-container,
     nav {
@@ -223,10 +252,9 @@ padding: 45px 42px;
     .teams-container {
         flex-direction: column-reverse;
     }
-
+    footer,
     .teams-content,
-    .facts-card-container
-    {
+    .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -234,25 +262,45 @@ padding: 45px 42px;
     .teams-container-img {
         grid-template-columns: 1fr;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         gap: 20px;
+    }
+    .features-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .teen-years-badge{
+        position: static;
+        max-width: 300px;
     }
 }
 
 /* Medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
-    .facts-card-container, 
+
+    .facts-card-container,
     header {
         padding: 20px;
     }
+    .features-section,
     .sponsors-img-container,
     nav {
         flex-direction: column;
     }
+
     .facts-card-container {
         gap: 30px;
     }
+
     .teams-container {
         flex-direction: column-reverse;
+    }
+    .features-img img{
+        width: 100%;
+    }
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
